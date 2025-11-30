@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ├─────┼─────┼─────┼─────┼─────┼─────┼─────┐ ┌─────┼─────┼─────┼─────┼─────┼─────┼─────┤
  * │SHIFT│  Q  │  X  │  M  │  C  │  V  │MUTE │ │PLAY │  K  │  P  │  ,  │  .  │  /  │SHIFT│
  * └─────┴─────┴─────┼─────┼─────┼─────┼─────┤ ├─────┼─────┼─────┼─────┼─────┴─────┴─────┘
- *                   │ GUI │CTRL │ NAV │SPACE│ │BSPC │ SYM │ ENT │ ALT │
+ *                   │ ALT │CTRL │ NAV │SPACE│ │BSPC │ SYM │ ENT │ GUI │
  *                   └─────┴─────┴─────┴─────┘ └─────┴─────┴─────┴─────┘
  */
 [_BASE] = LAYOUT(
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_B,    KC_L,    KC_D,    KC_W,    KC_Z,                          KC_QUOT, KC_F,    KC_O,    KC_U,    KC_J,    KC_MINS,
     KC_ESC,  KC_N,    KC_R,    KC_T,    KC_S,    KC_G,                          KC_Y,    KC_H,    KC_A,    KC_E,    KC_I,    KC_EQL,
     KC_LSFT, KC_Q,    KC_X,    KC_M,    KC_C,    KC_V,    KC_MUTE,     KC_MPLY, KC_K,    KC_P,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
-                      KC_LGUI, KC_LCTL, MO(_NAV),KC_SPC,  XXXXXXX,     XXXXXXX, KC_BSPC, MO(_SYMBOLS), KC_ENT, KC_LALT
+                      KC_LALT, KC_LCTL, MO(_NAV),KC_SPC,  XXXXXXX,     XXXXXXX, KC_BSPC, MO(_SYMBOLS), KC_ENT, KC_LGUI
 ),
 
 /* Layer 1: NAV (Navigate)
